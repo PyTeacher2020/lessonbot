@@ -19,5 +19,10 @@ def process_show_command(message):
     with open('books.csv') as database:
         for i in database:
             bot.send_message(message.chat.id,i)
+
+@bot.message_handler(commands=['button'])
+def activate_butt(message):
+    bot.send_message(message.chat.id, 'Тыкни на кнопку',reply_markup=markup)
+
     
 bot.polling()
