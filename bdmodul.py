@@ -6,4 +6,4 @@ def vk():
       'https': 'http://198.16.66.197:8080',
     }
 
-    print(requests.get('http://vk.com/', proxies=proxies))
+    return requests.get('http://vk.com/', proxies=proxies)
