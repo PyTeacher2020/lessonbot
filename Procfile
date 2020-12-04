@@ -1,1 +1,1 @@
-bot: python3 stat.py
+bot: python3 bot.py
